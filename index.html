@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ict project</title>
+	<!-- google fonts -->
+	<style type="text/css">
+		/* add all the styles here */
+		*{
+			margiin: 0;
+			padding:0;
+		}
+
+		body {
+			background-image: url(https://i.pinimg.com/enabled_hi/236x/60/08/71/600871409c0c34ce37a0fefbb1747716.jpg);
+			font-family: "Afacad Flux", sans-serif;
+		}
+
+		.header {
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+			border: 2px dashed rgba(106,72,58,1);
+		}
+
+		.navbar {
+			background-color:rgba(106,72,58,1);
+			padding: 3px;
+			text-align: center;
+			width: 100%;
+		}
+
+		ul {
+			list-style-type: none;
+
+		}
+
+		li{
+			display: inline;
+
+		}
+
+		a {
+			color: beige;
+			text-decoration: none;
+			align-content: space-between;
+			padding: 200px;
+
+		}
+
+
+
+		.container {
+			flex-direction: row;
+			align-content: center;
+			display: inline-flex;
+			flex-wrap: nowwrap;
+			justify-content: center;
+			margin-left: 10px;
+			margin-top: 30px;
+		}
+
+		.prods {
+			align-content: center;
+			padding: 5px;
+		}
+
+		.info{
+			background-color: whitesmoke;
+			padding: 15px;
+			text-align: center;
+		}
+
+		.button {
+				background-color:rosybrown;
+				border: solid 2px rosybrown;
+				color: #f1f1f1;
+				text-align: center;
+				border-radius: 12px;
+				width: 15%;
+		}
+
+		.button:hover{
+			background-color: white;
+			color: rosybrown;
+		}
+
+		.register{
+			margin-left: 32%;
+			margin-right: 25%;
+			margin-top: 30px;
+			border: 4px solid rosybrown;
+			background-color: whitesmoke;
+			border-radius: 60px;
+			width: 500px;
+			text-align: center;
+		}
+
+		#form{
+			padding: 15px;
+			color: rgba(106,72,58,1);
+		}
+
+		.footer{
+		background-color: rgba(106,72,58,1);
+		padding: 3px;
+		color: white ;
+		text-align: center;
+		width: 100%;
+		margin-top: 60px;
+
+	</style>
+</head>
+<body>
+	<!-- Section 1: MENU -->
+	<div class="header">
+		<h1>Baker Bear's Bakery</h1>
+	</div>
+
+	<div class="navbar">
+		<ul>
+			<li><a href="#intro" id="home">about</a></li>
+
+			<li><a href="#container" id="product">products</a></li>
+
+			<li><a href="#register" id="register">signup | login</a></li>
+	</ul>
+	</div>
+
+	<div class="intro" id="home">
+		<p style="text-align: center; color: brown"><span style="background-color: beige; padding: 10px; border: solid brown 2px; border-radius: 15px">"Serving you the cutest pastries in town! baked fresh daily and decorated to make your day happier :)" - baker bear</span></p>
+	</div>
+
+	<!-- Section 1: HERO -->
+
+	<!-- Section 2: PRODUCTS -->
+	<div class="container" id="product">
+
+		<div class="prods">
+			<img src="https://i.pinimg.com/236x/16/6d/3f/166d3f39083c0b3cce75adeb65005d74.jpg">
+			<div class="info">
+					<p>Strawberry Bunny</p>
+					<br />
+					<p>$20.00</p>
+			</div>
+		</div>
+
+		<div class="prods">
+			<img src="https://i.pinimg.com/236x/44/66/01/446601c424d6874b25e32e23d333606e.jpg">
+			<div class="info">
+					<p>Lemon Duck</p>
+					<br />
+					<p>$15.00</p>
+			</div>
+		</div>
+
+		<div class="prods">
+			<img src="https://i.pinimg.com/236x/9e/6e/a0/9e6ea038d9625cf13225217ff607e5a1.jpg">
+			<div class="info">
+					<p>Blueberry Seal</p>
+					<br />
+					<p>$20.00</p>
+			</div>
+		</div>
+	
+		<div class="prods">
+			<img src="https://i.pinimg.com/236x/a0/f0/83/a0f08316355dff0f2ee1bad37a43884b.jpg">
+			<div class="info">
+					<p>Pistachio Parakeet</p>
+					<br />
+					<p>$15.00</p>
+			</div>
+		</div>
+				
+		<div class="prods">
+			<img src="https://i.pinimg.com/236x/5b/75/aa/5b75aa6b1085f144418778ba048637ab.jpg">
+			<div class="info">
+					<p>Cookies' n Panda Dream</p>
+					<br />
+					<p>$20.00</p>
+			</div>
+		</div>
+
+		<div class="prods">
+			<img src="https://i.pinimg.com/236x/d4/5c/b0/d45cb06af61b8f1ad168ab5f8b13ca32.jpg">
+			<div class="info">
+					<p>Choco Bear</p>
+					<br />
+					<p>$20.00</p>
+
+			</div>
+		</div>
+
+
+		</div>
+	</div>
+
+	<!-- Section 4: LOGIN -->
+	<div class="register" id="register">
+
+		<form>
+		<div id="form">
+			<h2>Log in</h2>
+				<label for="email">email:</label>
+				<input type="email" name="email" placeholder="type in email ">
+
+			<br/>
+				<label for="uname">username:</label>
+				<input type="text" name="uname" placeholder="type in username ">
+
+			<br/>
+				<label for="password">password:</label>
+				<input type="password" name="passcode" placeholder="type in password ">
+
+			<br/>
+				<input type="button" value="save" class="button">
+
+    	</form>
+
+		<!-- Section 5: REGS -->
+		<form>
+			<h2>Sign up</h2>
+			<label for="email">email:</label>
+				<input type="email" name="email" placeholder="type in email ">
+
+			<br/>
+				<label for="uname">username:</label>
+				<input type="text" name="uname" placeholder="type in username ">
+
+			<br/>
+				<label for="password">password:</label>
+				<input type="password" name="passcode" placeholder="type in password ">
+
+			<br/>
+				<input type="button" value="save" class="button">
+		</form>
+	</div>
+</div>
+
+	<div class="footer">
+		<p> Francesca Jean Kho Yao | 9 Sapphire</p>
+	</div>
+
+</body>
+</html>
